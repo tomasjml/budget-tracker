@@ -1,6 +1,12 @@
 # Budget Tracker for Practice
 This budget tracker was build with React using Hooks for the purpose of practice. 
 
+# Heroku Important Links
+## Deploy Tutorial
+- [Link to Tutorial](https://blog.heroku.com/deploying-react-with-zero-configuration)
+## Deploy Link
+- [Link to Heroku Deploy](https://tomas-budget-tracker.herokuapp.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
