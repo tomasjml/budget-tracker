@@ -1,3 +1,6 @@
+# Budget Tracker for Practice
+This budget tracker was build with React using Hooks for the purpose of practice. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
