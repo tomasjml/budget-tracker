@@ -1,4 +1,4 @@
-import React, { useState, useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -21,29 +21,39 @@ const AddExpenseForm = () => {
             type: 'ADD_EXPENSE',
             payload: expense,
         });
+
+        setName("");
+        setCost("");
+        
     };
 
     return (
-        <form onSubmit={onSubmit}>
+        <form id='form-expense' onSubmit={onSubmit}>
             <div className='row'>
                 <div className='col-sm'>
-                    <label for='name'>Name</label>
+                    <label htmlFor='name'>Name</label>
                     <input
                         required='required'
                         type='text'
                         className='form-control'
                         id='name'
+                        name='name'
+                        placeholder='Set the name'
+                        //ref={(el) => (this.name = el)}
                         value={name}
                         onChange={(event) => setName(event.target.value)}
                     ></input>
                 </div>
                 <div className='col-sm'>
-                    <label for='cost'>Cost</label>
+                    <label htmlFor='cost'>Cost</label>
                     <input
                         required='required'
                         type='text'
                         className='form-control'
                         id='cost'
+                        name='cost'
+                        placeholder="Set the cost"
+                        //ref = {(el) => (this.cost = el)}
                         value={cost}
                         onChange={(event) => setCost(event.target.value)}
                     ></input>
